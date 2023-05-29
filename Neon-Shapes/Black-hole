@@ -1,0 +1,26 @@
+// Función para definir una paleta de colores personalizada
+vec3 customPalette(float x) {
+    vec3 paramA = vec3(0.5, 0.5, 0.5);   // Parámetro A de la paleta
+    vec3 paramB = vec3(0.5, 0.5, 0.5);   // Parámetro B de la paleta
+    vec3 paramC = vec3(1.0, 1.0, 1.0);   // Parámetro C de la paleta
+    vec3 paramD = vec3(0.263, 0.416, 0.557);   // Parámetro D de la paleta
+
+    // Aplicar fórmula de la paleta
+    return paramA + paramB * cos(9.28318 * (paramC * x + paramD));
+}
+
+void mainImage(out vec4 fragColor, in vec2 fragCoord) {
+    vec2 uv = (fragCoord * 2.0 - iResolution.xy) / iResolution.y;
+    vec2 uv0 = uv;
+    vec3 finalColor = vec3(0.001);
+
+    // Forma 1: Círculo modificado
+    float shapeRadius = 0.6;
+    float distanceToCenter = length(uv);
+    float shapeValue = smoothstep(shapeRadius - 0.11, shapeRadius + 0.01, distanceToCenter);
+    vec3 shapeColor = customPalette(distanceToCenter + iTime);
+    finalColor += shapeColor * shapeValue;
+
+    // Asignar el color final al fragmento
+    fragColor = vec4(finalColor, 0.0);
+}
