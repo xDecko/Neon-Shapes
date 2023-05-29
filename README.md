@@ -6,4 +6,4 @@ You can visualize and interact with the code in real-time on ShaderToy using the
 Neon Shapes Shader on www.shadertoy.com
 [capture.webm](https://github.com/xDecko/Neon-Shapes/assets/46726244/b8ff7041-b5db-4da9-bb1f-b74e66e49112)
 
-https://i.imgur.com/26B0OT4.jpeg
+![c](https://github.com/xDecko/Neon-Shapes/assets/46726244/a162a970-d819-4370-9b16-0710fc9c7c47)
