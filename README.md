@@ -4,7 +4,5 @@ This shader generates dynamic neon shapes with vibrant colors. It utilizes a pal
 
 You can visualize and interact with the code in real-time on ShaderToy using the following link:
 Neon Shapes Shader on www.shadertoy.com
-![a](https://github.com/xDecko/Neon-Shapes/assets/46726244/62b49a6c-7480-4051-a800-4ebd46b18166)
 
-![c](https://github.com/xDecko/Neon-Shapes/assets/46726244/a162a970-d819-4370-9b16-0710fc9c7c47)
-![b](https://github.com/xDecko/Neon-Shapes/assets/46726244/c6d118e0-aa25-4575-8ffb-8d84141547de)
+![a](https://github.com/xDecko/Neon-Shapes/assets/46726244/62b49a6c-7480-4051-a800-4ebd46b18166)
